@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Upadate Mode</h1>
+    <h3>Comment id: <%= comment.id %></h3>
+    <form method="post" action="/comments/<%= comment.id %>?_method=PATCH">
+        <textarea name="comment" id="" cols="30" rows="10"> 
+            <%= comment.comment %>
+        </textarea>
+        <button>Save</button>
+    </form>
+    <a href="/comments">Go to index</a>
+</body>
+</html>
